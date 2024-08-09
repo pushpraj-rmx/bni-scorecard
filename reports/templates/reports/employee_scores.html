@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Scores</title>
+    <style>
+        .low-score {
+            color: red;
+        }
+        .medium-score {
+            color: orange;
+        }
+        .high-score {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Employee Scores</h1>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Absent Score</th>
+            <th>Late Score</th>
+            <th>Referral Score</th>
+            <th>Visitors Score</th>
+            <th>TYFCB Score</th>
+            <th>Training Score</th>
+            <th>Testimonial Score</th>
+        </tr>
+        {% for score in scores_data %}
+        <tr>
+            <td>{{ score.name }}</td>
+            <td class="{% if score.absent_score < 50 %}low-score{% elif score.absent_score < 75 %}medium-score{% else %}high-score{% endif %}">{{ score.absent_score }}</td>
+            <td class="{% if score.late_score < 50 %}low-score{% elif score.late_score < 75 %}medium-score{% else %}high-score{% endif %}">{{ score.late_score }}</td>
+            <td class="{% if score.referral_score < 50 %}low-score{% elif score.referral_score < 75 %}medium-score{% else %}high-score{% endif %}">{{ score.referral_score }}</td>
+            <td class="{% if score.visitors_score < 50 %}low-score{% elif score.visitors_score < 75 %}medium-score{% else %}high-score{% endif %}">{{ score.visitors_score }}</td>
+            <td class="{% if score.TYFCB_score < 50 %}low-score{% elif score.TYFCB_score < 75 %}medium-score{% else %}high-score{% endif %}">{{ score.TYFCB_score }}</td>
+            <td class="{% if score.training_score < 50 %}low-score{% elif score.training_score < 75 %}medium-score{% else %}high-score{% endif %}">{{ score.training_score }}</td>
+            <td class="{% if score.testimonial_score < 50 %}low-score{% elif score.testimonial_score < 75 %}medium-score{% else %}high-score{% endif %}">{{ score.testimonial_score }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

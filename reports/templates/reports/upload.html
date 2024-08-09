@@ -1,0 +1,20 @@
+<!-- reports/templates/reports/upload.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Files</title>
+</head>
+<body>
+    <h1>Upload Scores and Training Files</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <label for="scores_file">Scores File:</label>
+        <input type="file" name="scores_file" id="scores_file" required>
+        <br>
+        <label for="training_file">Training File:</label>
+        <input type="file" name="training_file" id="training_file" required>
+        <br>
+        <button type="submit">Upload Files</button>
+    </form>
+</body>
+</html>

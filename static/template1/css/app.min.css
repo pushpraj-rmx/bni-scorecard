@@ -418,7 +418,7 @@
   --vz-info-bg-subtle: rgba(10, 199, 251, 0.15);
   --vz-info-border-subtle: rgba(10, 199, 251, 0.3);
   --vz-info-text-emphasis: #0895bc;
-  --vz-success: #3cd188;
+  --vz-success: #d13c6e;
   --vz-success-rgb: 60, 209, 136;
   --vz-success-bg-subtle: rgba(60, 209, 136, 0.15);
   --vz-success-border-subtle: rgba(60, 209, 136, 0.3);
@@ -17177,6 +17177,7 @@ span.flatpickr-weekday {
 .navbar-landing .navbar-nav .nav-item .nav-link:focus,
 .navbar-landing .navbar-nav .nav-item .nav-link:hover {
   color: var(--vz-success) !important;
+  color: red !important;
 }
 .navbar-landing.is-sticky {
   background-color: var(--vz-secondary-bg);
