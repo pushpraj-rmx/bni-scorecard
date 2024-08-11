@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-sxy95$)kb&k#nfs1hx0w6^4b$iud@ypm@nb8$hu!1-)xs37jn@
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['bni-scorecard.codersgallery.com']
 
 
 # Application definition
