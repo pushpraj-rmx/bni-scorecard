@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-sxy95$)kb&k#nfs1hx0w6^4b$iud@ypm@nb8$hu!1-)xs37jn@
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['bni-scorecard.codersgallery.com']
+ALLOWED_HOSTS = ['bni-scorecard.codersgallery.com','127.0.0.1','localhost']
 
 
 # Application definition
@@ -120,9 +120,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 import os
 
-STATIC_URL = 'static/'
-STATICFILES_DIRS = [BASE_DIR / "static"]
+STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_DIRS = [BASE_DIR / "static"]
 
 
 # Default primary key field type

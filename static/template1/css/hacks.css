@@ -40,3 +40,14 @@ button.btn:nth-child(2) {
 #id_file {
   padding-left: 20px;
 }
+
+
+#memberScoreCard .modal-content {
+  aspect-ratio: 3 / 2;
+}
+
+@media (max-width: 768px) {
+  #memberScoreCard .modal-content {
+      aspect-ratio: 2 / 3;
+  }
+}
