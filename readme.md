@@ -1,3 +1,16 @@
+***Note for developer(s)***
+
+#### there are two apps beside the main app :
+1. Scores : deals with csv files, processes data , generates report : working
+2. Reports : new app, to support xls fiiles exported from bni-connect : not working 
+
++ The developer who proceeds to works on this project, should create new django app, take template files from 'scores' app, implement new logics.
+
++ the files are xml based pre-2003 versions of excel, thus needs to be processed accordingly.  
+
+
+*do not worry about package.json, you can remove it, it was created to format the code automatically using prettier and doesnt interact with django app*
+
 # Employee Score Management System
 
 Welcome to the Employee Score Management System, a web application designed to manage and visualize employee performance scores. This system allows users to upload performance data from Excel or CSV files, preview and confirm the data, and view the scores with color-coded indicators to easily identify performance levels. The application categorizes scores into different classes such as low, medium, high, and very high, providing a clear visual representation of each employee's performance.
